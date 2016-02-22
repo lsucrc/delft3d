@@ -1,3 +1,4 @@
+#Version 1.1
 #add the base image
 FROM centos:7
 
