@@ -2,6 +2,7 @@
 #add the base image
 FROM centos:7
 
+
 #install and configure the dependencies
 RUN yum -y install \
     epel-release \
