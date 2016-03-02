@@ -32,5 +32,5 @@ ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/root/delft3d-5.01.00.2163/src/lib
 
 #run test case in parallel
 WORKDIR /root/delft3d-5.01.00.2163/examples/01_standard
-RUN mpirun -x LD_PRELOAD=/usr/lib64/openmpi/lib/libmpi.so -np 4 ../../bin/lnx/flow2d3d/bin/d_hydro.exe ./config_flow2d3d.xml
+RUN mpirun --allow-run-as-root -x LD_PRELOAD=/usr/lib64/openmpi/lib/libmpi.so -np 4 ../../bin/lnx/flow2d3d/bin/d_hydro.exe ./config_flow2d3d.xml
 
