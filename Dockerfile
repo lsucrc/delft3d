@@ -1,6 +1,6 @@
 #Version 1.1
 #add the base image
-FROM crcbase
+FROM lsucrc/crcbase
 
 USER crcuser
 #download the delft3d package
