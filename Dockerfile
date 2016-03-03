@@ -14,7 +14,7 @@ RUN yum -y install \
     autoconf flex bison pkgconfig \
     expat expat-devel \
     libtool-ltdl-devel \
-    netcdf-devel ruby \
+    netcdf-devel \
     openmpi openmpi-devel.x86_64 \
     openssh-server openssh-clients
 ENV PATH $PATH:/usr/lib64/openmpi/bin
