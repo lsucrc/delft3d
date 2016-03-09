@@ -12,6 +12,7 @@ RUN tar -zxvf delft3d-5.01.00.2163.tgz
 WORKDIR delft3d-5.01.00.2163/src
 RUN ./build.sh -gnu 
 ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/model/delft3d-5.01.00.2163/src/lib
+ENV PATH $PATH:/model/delft3d-5.01.00.2163/bin/lnx/flow2d3d/bin
 
 #run test case in parallel
 WORKDIR /model/delft3d-5.01.00.2163/examples/01_standard
